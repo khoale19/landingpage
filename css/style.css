@@ -1,0 +1,201 @@
+@import "design-system.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(238, 236, 233),
+    rgb(235, 237, 250)
+  );
+}
+
+main {
+  margin: 0 10vw;
+}
+
+p,
+h2,
+h4,
+.btn {
+  font-family: var(--font);
+}
+
+.btn {
+  border-radius: 100em;
+  border: none;
+  height: 3vw;
+  width: 9vw;
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1vw 0;
+}
+
+.page-header .image {
+  align-self: center;
+  width: 6vw;
+}
+
+.page-header .btn {
+  justify-self: end;
+  align-self: center;
+  background-color: var(--dark-blue);
+  z-index: 1;
+}
+
+.page-header .btn:hover {
+  opacity: 1;
+  background-color: var(--violet-blue);
+}
+
+.introduction {
+  margin: 10vw 0 13vw;
+}
+
+.introduction__description {
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  gap: 3vw;
+}
+
+.introduction__description .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.introduction__description .title p {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 3vw;
+}
+
+.introduction__description .description {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 3.5vw;
+}
+
+.introduction__description .btn {
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradient11),
+    var(--gradient12)
+  );
+}
+
+.model-image {
+  position: absolute;
+  right: -17vw;
+  top: -7vw;
+  width: 60vw;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10vh;
+  margin: 5vh 0;
+}
+
+.feature__check-out,
+.feature__element {
+  width: 25vw;
+  aspect-ratio: 1/1;
+  border-radius: 1.5vw;
+  padding: 2em;
+  background-color: white;
+}
+
+.feature__check-out {
+  background-image: linear-gradient(
+    to top,
+    var(--gradient11),
+    var(--gradient12)
+  );
+  padding-top: 2em;
+  color: white;
+  font-family: var(--font);
+  font-weight: 800;
+  font-size: 2vw;
+}
+
+.feature__element {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 5vw;
+  gap: 2vw;
+}
+
+.feature__element img {
+  position: absolute;
+  top: -1.5em;
+}
+
+.feature__element .title {
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 1.7vw;
+}
+
+.feature__element .description {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+
+.feature__element .btn {
+  display: flex;
+  position: absolute;
+  bottom: 1vw;
+  color: var(--strong-pink);
+  background-color: transparent;
+  font-size: 1.2vw;
+}
+
+.page-footer {
+  position: absolute;
+  width: 100vw;
+  background-color: var(--dark-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 4vw;
+}
+
+.page-footer img {
+  align-self: center;
+  position: relative;
+  left: 10vw;
+  width: 6vw;
+}
+
+.page-footer .btn {
+  align-self: center;
+  position: relative;
+  justify-self: end;
+  right: 11vw;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradient21),
+    var(--gradient22)
+  );
+}
